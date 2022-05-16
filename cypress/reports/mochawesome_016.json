@@ -1,0 +1,353 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 9,
+    "passes": 0,
+    "pending": 0,
+    "failures": 9,
+    "start": "2022-05-11T20:50:36.952Z",
+    "end": "2022-05-11T20:51:09.002Z",
+    "duration": 32050,
+    "testsRegistered": 9,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5bc19c8b-19d0-414c-bc3f-edcbcd90065d",
+      "title": "",
+      "fullFile": "cypress/integration/bonus.spec.js",
+      "file": "cypress/integration/bonus.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5c19d689-8e0b-46ea-ade0-52896c6851a3",
+          "title": "12 - Adicione uma tabela à página",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A página deve possuir uma tabela",
+              "fullTitle": "12 - Adicione uma tabela à página A página deve possuir uma tabela",
+              "timedOut": null,
+              "duration": 10235,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('table');",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `table`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `table`, but never found it.\n    at shouldExist (http://localhost:43845/__cypress/tests?p=cypress/integration/bonus.spec.js:108:20)\n    at Context.eval (http://localhost:43845/__cypress/tests?p=cypress/integration/bonus.spec.js:148:33)",
+                "diff": null
+              },
+              "uuid": "782e595e-dc17-474c-beb3-0102a802b11e",
+              "parentUUID": "5c19d689-8e0b-46ea-ade0-52896c6851a3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "782e595e-dc17-474c-beb3-0102a802b11e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10235,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "5264bbe2-dc1f-4eb1-80b0-6254feec8c8d",
+          "title": "13 - Utilize o Box model",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Altere `margin`, `padding` e `border` dos elementos para ver, na prática, como esses atributos influenciam e melhoram a visualização dos componentes",
+              "fullTitle": "13 - Utilize o Box model Altere `margin`, `padding` e `border` dos elementos para ver, na prática, como esses atributos influenciam e melhoram a visualização dos componentes",
+              "timedOut": null,
+              "duration": 169,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile('./style.css').then(function (content) {\n  var styles = ['margin', 'padding', 'border'];\n  expect(styles.every(function (style) {\n    return content.match(style);\n  }), 'Do not match styles margin, padding and border').to.be[\"true\"];\n});",
+              "err": {
+                "message": "AssertionError: Do not match styles margin, padding and border: expected false to be true",
+                "estack": "AssertionError: Do not match styles margin, padding and border: expected false to be true\n    at Context.eval (http://localhost:43845/__cypress/tests?p=cypress/integration/bonus.spec.js:160:66)",
+                "diff": null
+              },
+              "uuid": "0bd50c75-7714-4cd1-b0d6-a9fdc7e1374a",
+              "parentUUID": "5264bbe2-dc1f-4eb1-80b0-6254feec8c8d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0bd50c75-7714-4cd1-b0d6-a9fdc7e1374a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 169,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "413b4838-c81c-46fa-933a-b59854f3798f",
+          "title": "14 - Altere atributos relacionados as fontes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Altere o tamanho da letra",
+              "fullTitle": "14 - Altere atributos relacionados as fontes Altere o tamanho da letra",
+              "timedOut": null,
+              "duration": 153,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var styles = [/font:/, /font-size:/];\n(0, _ActionBase.verifyExistingStyle)(styles);",
+              "err": {
+                "message": "AssertionError: Do not match styles /font:/,/font-size:/: expected false to be true",
+                "estack": "AssertionError: Do not match styles /font:/,/font-size:/: expected false to be true\n    at Context.eval (http://localhost:43845/__cypress/tests?p=cypress/integration/bonus.spec.js:125:53)",
+                "diff": null
+              },
+              "uuid": "41b087a1-4daa-4a6f-bfb8-a5abb518fc44",
+              "parentUUID": "413b4838-c81c-46fa-933a-b59854f3798f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Altere a cor da letra",
+              "fullTitle": "14 - Altere atributos relacionados as fontes Altere a cor da letra",
+              "timedOut": null,
+              "duration": 177,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var styles = [/font:/, /[^-]color:/];\n(0, _ActionBase.verifyExistingStyle)(styles);",
+              "err": {
+                "message": "AssertionError: Do not match styles /font:/,/[^-]color:/: expected false to be true",
+                "estack": "AssertionError: Do not match styles /font:/,/[^-]color:/: expected false to be true\n    at Context.eval (http://localhost:43845/__cypress/tests?p=cypress/integration/bonus.spec.js:125:53)",
+                "diff": null
+              },
+              "uuid": "fc19694d-0ce2-43ed-8628-2d421542d822",
+              "parentUUID": "413b4838-c81c-46fa-933a-b59854f3798f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Altere o espaçamento entre as linhas",
+              "fullTitle": "14 - Altere atributos relacionados as fontes Altere o espaçamento entre as linhas",
+              "timedOut": null,
+              "duration": 257,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var styles = [/font:/, /line-height:/];\n(0, _ActionBase.verifyExistingStyle)(styles);",
+              "err": {
+                "message": "AssertionError: Do not match styles /font:/,/line-height:/: expected false to be true",
+                "estack": "AssertionError: Do not match styles /font:/,/line-height:/: expected false to be true\n    at Context.eval (http://localhost:43845/__cypress/tests?p=cypress/integration/bonus.spec.js:125:53)",
+                "diff": null
+              },
+              "uuid": "29d2e080-1127-4485-b272-6001a2d84b61",
+              "parentUUID": "413b4838-c81c-46fa-933a-b59854f3798f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Altere o `font-family`",
+              "fullTitle": "14 - Altere atributos relacionados as fontes Altere o `font-family`",
+              "timedOut": null,
+              "duration": 166,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var styles = [/font:/, /font-family:/];\n(0, _ActionBase.verifyExistingStyle)(styles);",
+              "err": {
+                "message": "AssertionError: Do not match styles /font:/,/font-family:/: expected false to be true",
+                "estack": "AssertionError: Do not match styles /font:/,/font-family:/: expected false to be true\n    at Context.eval (http://localhost:43845/__cypress/tests?p=cypress/integration/bonus.spec.js:125:53)",
+                "diff": null
+              },
+              "uuid": "aaac0b4a-9081-4651-a469-f74d3b108a01",
+              "parentUUID": "413b4838-c81c-46fa-933a-b59854f3798f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "41b087a1-4daa-4a6f-bfb8-a5abb518fc44",
+            "fc19694d-0ce2-43ed-8628-2d421542d822",
+            "29d2e080-1127-4485-b272-6001a2d84b61",
+            "aaac0b4a-9081-4651-a469-f74d3b108a01"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 753,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "30bd30fb-ae8f-4cdf-9cbd-a5dda5deae01",
+          "title": "15 - Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Utilizar a classe \"lado-esquerdo\"",
+              "fullTitle": "15 - Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro Utilizar a classe \"lado-esquerdo\"",
+              "timedOut": null,
+              "duration": 10180,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('.lado-esquerdo');",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.lado-esquerdo`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.lado-esquerdo`, but never found it.\n    at shouldExist (http://localhost:43845/__cypress/tests?p=cypress/integration/bonus.spec.js:108:20)\n    at Context.eval (http://localhost:43845/__cypress/tests?p=cypress/integration/bonus.spec.js:190:33)",
+                "diff": null
+              },
+              "uuid": "f420f375-4f6b-405e-90d9-7b87dd053685",
+              "parentUUID": "30bd30fb-ae8f-4cdf-9cbd-a5dda5deae01",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Utilizar a classe \"lado-direito\"",
+              "fullTitle": "15 - Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro Utilizar a classe \"lado-direito\"",
+              "timedOut": null,
+              "duration": 10184,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _ActionBase.shouldExist)('.lado-direito');",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.lado-direito`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.lado-direito`, but never found it.\n    at shouldExist (http://localhost:43845/__cypress/tests?p=cypress/integration/bonus.spec.js:108:20)\n    at Context.eval (http://localhost:43845/__cypress/tests?p=cypress/integration/bonus.spec.js:193:33)",
+                "diff": null
+              },
+              "uuid": "4a23aeef-5492-40d0-aee5-fb4bf3a2f7fa",
+              "parentUUID": "30bd30fb-ae8f-4cdf-9cbd-a5dda5deae01",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verificar se os elementos com as classes lado-direito e lado-esquerdo estão posicionados corretamente",
+              "fullTitle": "15 - Posicione o seu artigo e a seção sobre aprendizados um ao lado do outro Verificar se os elementos com as classes lado-direito e lado-esquerdo estão posicionados corretamente",
+              "timedOut": null,
+              "duration": 120,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.document().then(function (doc) {\n  var leftSide = {\n    top: (0, _ActionBase.evaluateOffset)(doc, '.lado-esquerdo', 'Top'),\n    height: (0, _ActionBase.evaluateOffset)(doc, '.lado-esquerdo', 'Height')\n  };\n  var rightSide = {\n    top: (0, _ActionBase.evaluateOffset)(doc, '.lado-direito', 'Top'),\n    height: (0, _ActionBase.evaluateOffset)(doc, '.lado-direito', 'Height')\n  };\n  expect((0, _ActionBase.isSidebySide)(leftSide, rightSide), 'Not side by side. *hint - search for float, width and positioning properties to achieve this requirement*').to.be[\"true\"];\n});",
+              "err": {
+                "message": "TypeError: Cannot read property 'offsetTop' of null",
+                "estack": "TypeError: Cannot read property 'offsetTop' of null\n    at evaluateOffset (http://localhost:43845/__cypress/tests?p=cypress/integration/bonus.spec.js:112:37)\n    at Context.eval (http://localhost:43845/__cypress/tests?p=cypress/integration/bonus.spec.js:198:45)",
+                "diff": null
+              },
+              "uuid": "81c398ca-0033-43c9-858d-a6a7bfa43749",
+              "parentUUID": "30bd30fb-ae8f-4cdf-9cbd-a5dda5deae01",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f420f375-4f6b-405e-90d9-7b87dd053685",
+            "4a23aeef-5492-40d0-aee5-fb4bf3a2f7fa",
+            "81c398ca-0033-43c9-858d-a6a7bfa43749"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 20484,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
