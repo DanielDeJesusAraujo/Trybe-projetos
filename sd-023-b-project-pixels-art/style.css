@@ -1,0 +1,80 @@
+body{
+  background-color: blanchedalmond;
+}
+header {
+  text-align: center;
+}
+
+.color {
+  display: inline-block;
+  border: 1px solid black;
+  min-width: 40px;
+  min-height: 40px;
+  margin: 0px 25px;
+}
+
+#color-palette {
+  text-align: center;
+}
+
+.pixel{
+  padding: 0px;
+  border: 1px solid black;
+  display: inline-block;
+  background-color: white;
+  color: white;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.cor0 {
+  background-color: black;
+}
+
+.cor1 {
+  background-color: chartreuse;
+}
+
+.cor2 {
+  background-color: yellow;
+}
+
+.cor3 {
+  background-color: brown;
+}
+
+#clear-board{
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+}
+
+#board-size{
+  display: inline-block;
+  width: 100px;
+  padding: 5px;
+  margin-left: 20%;
+  margin-top: 10px;
+  
+}
+
+#buttons{
+  text-align: center;
+}
+
+#quadro{
+  text-align: center;
+}
+
+#generate-board{
+  display: inline-block;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+#pixel-board{
+  display: inline-block;
+  background-color: antiquewhite;
+  font-size: 0px;
+}
